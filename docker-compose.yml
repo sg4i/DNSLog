@@ -38,6 +38,7 @@ services:
       NS1_DOMAIN: $NS1_DOMAIN
       NS2_DOMAIN: $NS2_DOMAIN
       SERVER_IP: $SERVER_IP
+      TIME_ZONE: $TIME_ZONE
     depends_on:
       - mysql
     ports:

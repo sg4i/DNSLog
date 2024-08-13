@@ -70,7 +70,7 @@ DATABASES = {
         'USER': os.getenv('DB_USER', 'root'),
         'PASSWORD': os.getenv('DB_PASSWORD', 'root'),
         'HOST': os.getenv('DB_HOST', 'localhost'),
-        'PORT': '3306'
+        'PORT': os.getenv('DB_PORT', '3306'),
     }
 }
 
@@ -78,7 +78,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
 LANGUAGE_CODE = 'zh-Hans'
-TIME_ZONE = 'Asia/Shanghai'
+TIME_ZONE = os.getenv('TIME_ZONE', 'Asia/Shanghai')
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
